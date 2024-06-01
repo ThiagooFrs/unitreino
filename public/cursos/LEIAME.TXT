@@ -1,0 +1,3 @@
+VEJA NO BANCO DE DADOS E CRIE A PAGINA PHP DO CURSO COM BASE NO ID
+
+EXEMPLO: localhost/UniTreino/public/cursos/22.php

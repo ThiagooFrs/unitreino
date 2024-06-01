@@ -1,0 +1,21 @@
+body {
+    background-color: #198754;
+  }
+  .vh-100 {
+    height: 100vh;
+  }
+  .card {
+    border-radius: 1rem;
+  }
+  .img-fluid {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .btn-dark {
+    background-color: #20c997;
+  }
+  .text-black {
+    color: #20c997;
+  }
+  .small.text-muted {
+    color: #6c757d !important;
+  }
