@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['cadastrar'])) {
     } else {
         $_SESSION['error_message'] = "Erro ao cadastrar: " . $db->error;
     }
-    header("Location: index.php");
+    header("Location: ../index.php");
     exit();
 }
 

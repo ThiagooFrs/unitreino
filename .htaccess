@@ -1,0 +1,13 @@
+# HTID:23315617: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:23315617:
+
+# Custom 404 Error Page
+ErrorDocument 404 /public/404.php
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Redirects and rewrites (if any)
+# For example:
+# RewriteRule ^old-page.html$ new-page.html [R=301,L]

@@ -42,8 +42,6 @@ session_start();
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
-
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
         <a href="../index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
@@ -63,13 +61,12 @@ session_start();
         if(isset($_SESSION['nome_usuario'])) {
             echo "Olá ".$_SESSION['nome_usuario']." <a href='../private/logout.php' class='nav-item btn btn-success'>SAIR</a>";
         } else {
-            echo "<a href='login.php' class='btn btn-success py-4 px-lg-5 d-none d-lg-block'>Entrar/Registrar<i class='fa fa-arrow-right ms-3'></i></a>";
+            echo "<a href='login.php' class='btn btn-success py-4 px-lg-5 d-lg-block'>Entrar/Registrar<i class='fa fa-arrow-right ms-3'></i></a>";
         }
         ?>
     </div>   
     </nav>
     <!-- Navbar End -->
-
 
     <!-- Header Start -->
     <div class="container-fluid bg-success py-5 mb-5 page-header">

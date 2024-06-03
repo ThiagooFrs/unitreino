@@ -47,7 +47,7 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="../index.php" class="nav-item nav-link active">Home</a>
+                <a href="../index.php" class="nav-item nav-link">Home</a>
                 <a href="about.php" class="nav-item nav-link">Sobre</a>
                 <a href="courses.php" class="nav-item nav-link">Treinamentos</a>
             </div>
@@ -56,7 +56,7 @@ session_start();
         if(isset($_SESSION['nome_usuario'])) {
             echo "Olá ".$_SESSION['nome_usuario']." <a href='../private/logout.php' class='nav-item btn btn-success'>SAIR</a>";
         } else {
-            echo "<a href='login.php' class='btn btn-success py-4 px-lg-5 d-none d-lg-block'>Entrar/Registrar<i class='fa fa-arrow-right ms-3'></i></a>";
+            echo "<a href='login.php' class='btn btn-success py-4 px-lg-5 d-lg-block'>Entrar/Registrar<i class='fa fa-arrow-right ms-3'></i></a>";
         }
         ?>
     </div>   

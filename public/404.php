@@ -13,7 +13,7 @@ session_start();
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="/img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,14 +25,14 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="../lib/animate/animate.min.css" rel="stylesheet">
-    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -46,7 +46,7 @@ session_start();
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-        <a href="../index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <a href="/index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
             <h2 class="m-0 text-success"><i class="fa fa-book me-3"></i>UniTreino</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -54,16 +54,16 @@ session_start();
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="../index.php" class="nav-item nav-link">Home</a>
-                <a href="../public/about.php" class="nav-item nav-link">Sobre</a>
-                <a href="../courses.php" class="nav-item nav-link">Treinamentos</a>
+                <a href="/index.php" class="nav-item nav-link">Home</a>
+                <a href="/public/about.php" class="nav-item nav-link">Sobre</a>
+                <a href="/public/courses.php" class="nav-item nav-link">Treinamentos</a>
             </div>
             <div>
         <?php
         if(isset($_SESSION['nome_usuario'])) {
-            echo "Olá ".$_SESSION['nome_usuario']." <a href='../private/logout.php' class='nav-item btn btn-success'>SAIR</a>";
+            echo "Olá ".$_SESSION['nome_usuario']." <a href='/private/logout.php' class='nav-item btn btn-success'>SAIR</a>";
         } else {
-            echo "<a href='../login.php' class='btn btn-success py-4 px-lg-5 d-none d-lg-block'>Entrar/Registrar<i class='fa fa-arrow-right ms-3'></i></a>";
+            echo "<a href='/public/login.php' class='btn btn-success py-4 px-lg-5 d-lg-block'>Entrar/Registrar<i class='fa fa-arrow-right ms-3'></i></a>";
         }
         ?>
     </div>   
@@ -79,7 +79,7 @@ session_start();
                     <h1 class="display-3 text-white animated slideInDown">Não encontrada</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="index.php">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="/index.php">Home</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">404</li>
                         </ol>
                     </nav>
@@ -99,7 +99,7 @@ session_start();
                     <h1 class="display-1">404</h1>
                     <h1 class="mb-4">Página não encontrada</h1>
                     <p class="mb-4">Lamentamos, mas a página que você procurou não existe em nosso site!</p>
-                    <a class="btn btn-success rounded-pill py-3 px-5" href="../index.php">Início</a>
+                    <a class="btn btn-success rounded-pill py-3 px-5" href="/index.php">Início</a>
                 </div>
             </div>
         </div>
@@ -152,13 +152,13 @@ session_start();
     <!-- JavaScript Lib -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/wow/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

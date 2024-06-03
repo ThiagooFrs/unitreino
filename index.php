@@ -65,7 +65,7 @@ session_start();
         if(isset($_SESSION['nome_usuario'])) {
             echo "Olá ".$_SESSION['nome_usuario']." <a href='private/logout.php' class='nav-item btn btn-success'>SAIR</a>";
         } else {
-            echo "<a href='public/login.php' class='btn btn-success py-4 px-lg-5 d-none d-lg-block'>Entrar/Registrar<i class='fa fa-arrow-right ms-3'></i></a>";
+            echo "<a href='public/login.php' class='btn btn-success py-4 px-lg-5 d-lg-block'>Entrar/Registrar<i class='fa fa-arrow-right ms-3'></i></a>";
         }
         ?>
     </div>   
